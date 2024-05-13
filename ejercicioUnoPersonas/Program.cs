@@ -24,7 +24,7 @@ class Program
         administradora.agregarEmpleado(empleado2);
 
         // Buscar un empleado por número de documento
-        Empleado empleadoEncontrado = administradora.BuscarEmpleadoPorDocumento("12345678");
+        Empleado empleadoEncontrado = administradora.buscarEmpleadoPorDocumento("12345678");
         if (empleadoEncontrado != null)
         {
             Console.WriteLine("Empleado encontrado:");

@@ -28,9 +28,20 @@ namespace ejercicioUnoPersonas.Models
         
 
         // Método para verificar si el empleado tiene el número de documento buscado
-        public bool SosNumeroDoc(string numeroDocumento)
+        public bool sosNumeroDoc(string numeroDocumento)
         {
             return this.numeroDocumento.ToLower().Trim() == numeroDocumento.ToLower().Trim();
+
+            /*
+                if (this.numeroDocumento.ToLower().Trim() == numeroDocumento.ToLower().Trim())
+                {
+                     return true;
+                }
+                else
+                {
+                    return false;
+                }
+            */
         }
 
     }

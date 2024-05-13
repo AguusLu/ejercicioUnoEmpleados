@@ -22,18 +22,18 @@ namespace ejercicioUnoPersonas.Models
         }
 
         // Método para eliminar un empleado de la lista
-        public void EliminarEmpleado(Empleado empleado)
+        public void eliminarEmpleado(Empleado empleado)
         {
             empleados.Remove(empleado);
         }
 
         // Método para buscar un empleado por número de documento
-        public Empleado BuscarEmpleadoPorDocumento(string numeroDocumento)
+        public Empleado buscarEmpleadoPorDocumento(string numeroDocumento)
         {
             foreach (Empleado empleado in empleados)
             {
                 Console.WriteLine($"Comparando con el empleado {empleado.nombre} {empleado.apellido}");
-                if (empleado.SosNumeroDoc(numeroDocumento))
+                if (empleado.sosNumeroDoc(numeroDocumento))
                 {
                     return empleado;
                 }
